@@ -31,7 +31,7 @@ h1, h2, h3, h4{
 
 /*全体的に小さめにしよう*/
 h1 {
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 h2{ 
 
@@ -62,12 +62,31 @@ p{
 /*プロフィール画像 */
 .prof_pic img{
     float: right;
-    height: 158px; 
+    height: 188px; 
     margin-top: 78px;
     margin-right: 30px;
 
 }
 
+#slide {
+    position relative;
+}
+
+#slide img{
+    postion: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+}
+#slide img.active{
+    z-index: 10;
+    opacity: 1.0;
+}
+
+#slide img.last-active{
+    z-index: 9;
+}
 
 
 /* リンクとかの色調整 */
@@ -150,6 +169,7 @@ table.list td.r1{
 }
 
 table.list td.r2{
+    vertical-align: top; 
     padding-left: 10px;
 }
 
@@ -187,6 +207,10 @@ table.list td.r2{
     margin-left: 1em; 
 }
 */
+.hobby{
+    padding-bottom: 20px;
+    margin-left: 2em; 
+}
 .contact{
     padding-bottom: 20px;
     margin-left: 2em; 

@@ -5,32 +5,43 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel = "stylesheet" type = "text/css" href = "css/style.css"/>
         <title>Hajime MIHARA</title>
-    </head>
-    <body>
+        <link rel="shortcut icon" href="img/iconset/favicon.ico" type="image/vnd.microsoft.icon">
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script>
+            $(function(){
+                $(window).load(function(){
+                    var delaySpeed = 50;
+                    var fadeSpeed = 1000;
+                $('div').each(function(i){
+                    $(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+                    });
+                });
+            });
+        </script>
+         
+        </head>
+        <body>
         <div class="wrapper header toplink">
             <h1><a href="index.html"> Hajime MIHARA </a></h1>
         </div>
-        <!--
-        <div class="prof_pic">
-            <img alt="profile" class="prof_pic" src="img/profile/pro.jpg">
-        </div>
-        -->
 
+        <div class="prof_pic">
+            <img alt="profile"  src="img/profile/pro_bin_al.png">
+        </div>
 
         <div class="main">
             <h2> topic </h2>
-
             <div class="topic">
-
                 <table class="list">
-
                     <tr>
                         <td class="r1">13 Aug. 2014</td>
                         <td class="r2">Opened this website</td>
                     </tr>
                     <tr>
                         <td class="r1">11 Jun. 2014</td>
-                        <td class="r2">Our research proposal <span class="award">An Object Removing System based on Light Field Acquiring "Utsuranain-desu"</span> was accepted to <a href="https://cicp.naist.jp/">NAIST CICP</a></td>
+                        <td class="r2">Our research proposal <span class="award">An Object Removing System based on Light Field Acquiring "写ラナインです"</span> was accepted to <a target="blank" href="https://cicp.naist.jp/">NAIST CICP</a></td>
                     </tr>
                     <tr>
                         <td class="r1">15 Apr. 2014</td>
@@ -40,14 +51,12 @@
             </div>
 
             <h2> education </h2>
-
             <div class="edu">
                 <table class="list">
                     <tr>
                         <td class="r1">Apr. 2014 -</td>
                         <td class="r2">Graduation School of Information Science, Nara Institute Science and Technology (NAIST) </td>
                     </tr>
-
                     <tr>
                         <td class="r1">Apr. 2012 - Mar. 2014</td>
                         <td class="r2">Advanced Course of Production System, Asahikawa National College of Technology </td>
@@ -71,6 +80,7 @@
             <div class="research">
                 <p> Under Constructing </p>
             </div>
+
             <h2> Contact </h2>
             <div class="contact">
                 <table class="list">
@@ -107,22 +117,25 @@
                         </td>
                     </tr>
 
-
-
-
+                    <!--
+                    <tr>
+                        <td class="r1">
+                            <img class="icon" alt="Flickr"  src="img/iconset/flickr.png"> 
+                        </td>
+                        <td class="r2">
+                            <a target="blank" href="https://www.flickr.com/photos/106235735@N04/">flickr</a>
+                        </td>
+                    </tr>
+                    -->
                 </table>
-
             </div>
-            
         </div>
-
 
         <div class="wrapper footer">
 
             <div id="nav">
                 <ul>
                     <li> <a href="index.html">Top</a></li>
-
                     <li><a target="blank" href="http://www.naist.jp">NAIST</a></li>
                     <li><a target="blank" href="http://isw3.naist.jp/home-en.html">NAIST-IS</a></li>
                     <li><a target="blank" href="http://omilab.naist.jp">NAIST OMI-LAB</a></li>
@@ -131,8 +144,6 @@
             <div id="footertext">
                 Copyright &copy; 2014 Hajime MIHARA All Rights Resived. 
             </div>
-
         </div>
     </body>
     </html>
-
