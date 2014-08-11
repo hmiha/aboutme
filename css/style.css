@@ -145,6 +145,8 @@ a:hover {
 }
 
 table.list td.r1{
+    vertical-align: top; 
+    white-space: nowrap;
 }
 
 table.list td.r2{
@@ -180,10 +182,11 @@ table.list td.r2{
     padding-bottom: 20px;
     margin-left: 1em; 
 }
-.award{
+/*.award{
     padding-bottom: 20px;
     margin-left: 1em; 
 }
+*/
 .contact{
     padding-bottom: 20px;
     margin-left: 2em; 
