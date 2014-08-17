@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    /*$B$"$H$GD4@0$7$h$&(B*/
+    /*あとで調整しよう*/
     margin: 0 auto;
     padding: 0 auto;
     line-height: 1.3;
@@ -12,12 +12,11 @@ body {
 
     font-size: 0.9em;
 
-    /* $B%U%)%s%H$r?'!9(B MAIN$B$O(BGoogleFont$B$+$i$N(BOpenSans */
-    font-family: "Open Sans", "Helvetica", "Arial", "$B%R%i%.%N3Q%4(B Pro W3", "Hiragino Kaku Gothic Pro", "$B%a%$%j%*(B", "Meiryo", "MS P$B%4%7%C%/(B", "MS P Gothic", sans-serif;
-
+    /* フォントを色々 MAINはGoogleFontからのOpenSans */
+    font-family: "Open Sans", "Helvetica", "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif; */
     line-height: 1.5; 
 
-    /*$BA4BN$NI}(B*/
+    /*全体の幅*/
     width: 900px;
 }
 
@@ -29,14 +28,14 @@ h1, h2, h3, h4{
     font-weight: 400;
 }
 
-/*$BA4BNE*$K>.$5$a$K$7$h$&(B*/
+/*全体的に小さめにしよう*/
 h1 {
     font-size: 1.8em;
 }
 h2{ 
 
     font-size: 1.1em;
-    /*$BA4$FBgJ8;z$K(B*/
+    /*全て大文字に*/
     text-transform: uppercase;
 }
 h3,h4{
@@ -45,7 +44,7 @@ h3,h4{
 
 
 
-/*$B%j%9%H(B*/
+/*リスト*/
 ol, ul{
     line-height; 1.8;
 }
@@ -59,7 +58,7 @@ p{
     padding-left: 1em;
 }
 
-/*$B%W%m%U%#!<%k2hA|(B */
+/*プロフィール画像 */
 .prof_pic img{
     float: right;
     height: 188px; 
@@ -89,25 +88,25 @@ p{
 }
 
 
-/* $B%j%s%/$H$+$N?'D4@0(B */
-/* $B?'$N;29M(B http://www.coprosystem.co.jp/tipsblog/2013/08/01.html */
+/* リンクとかの色調整 */
+/* 色の参考 http://www.coprosystem.co.jp/tipsblog/2013/08/01.html */
 a {
     color: #FBA848;
-    text-decoration: none; /*$B%j%s%/$N%"%s%@!<%i%$%s$r>C$9(B */
+    text-decoration: none; /*リンクのアンダーラインを消す */
 }
 a:visited {
     color: #FBA848;
 }
-/*$BI,MW$+!)(B */
+/*必要か？ */
 a:focus {
     color: #363947;
     outline: thin dotted;
 }
 a:hover {
-    color: #363947; /*$B%M%$%S!<E*$J(B*/
+    color: #363947; /*ネイビー的な*/
 }
 
-/* $B%X%C%@$rF)2a%U%l!<%`E*$K(B*/
+/* ヘッダを透過フレーム的に*/
 .wrapper{
     margin: 0 auto;
     width: 100%;
@@ -122,14 +121,14 @@ a:hover {
 }
 .toplink a {
     color: #333;
-    text-decoration: none; /*$B%j%s%/$N%"%s%@!<%i%$%s$r>C$9(B */
+    text-decoration: none; /*リンクのアンダーラインを消す */
 }
 .toplink a:visited {
     color: #333;
 }
 .footer {
     width: 900px;
-    bottom: 0px; /*$B2<8GDj(B*/ 
+    bottom: 0px; /*下固定*/ 
     position: fixed;
     /*padding-bottom: 0px;*/
     height: auto;
@@ -140,7 +139,7 @@ a:hover {
 .footertext{
 }
 
-/* $B%U%C%?!<$N%j%s%/(B */
+/* フッターのリンク */
 
 #nav {
     /*text-align: right;*/
@@ -158,7 +157,7 @@ a:hover {
     margin-left: 20px;
 }
 .main{
-    /*$B%X%C%@$H%U%C%?J,>e2<$r3+$1$k(B*/
+    /*ヘッダとフッタ分上下を開ける*/
     padding-top: 100px;
     padding-bottom: 60px;
 }
@@ -174,14 +173,14 @@ table.list td.r2{
 }
 
 .section p{
-    padding-left: 2em; /*2$BJ8;zJ,%$%s%G%s%H(B*/
+    padding-left: 2em; /*2文字分インデント*/
 }
 .section img{
-    margin-left: 2em; /*$B2hA|$N:8B&(B*/
+    margin-left: 2em; /*画像の左側*/
 }
 
 
-/*$B3F%;%/%7%g%s$K$D$$$F(B*/
+/*各セクションについて*/
 .topic{
     margin-left: 2em; 
     padding-bottom: 20px;
