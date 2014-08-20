@@ -16,6 +16,17 @@ body {
     width: 900px;
 }
 
+
+/*selected Text*/
+::selection {
+    background:#88c873; /* Safari */
+    }
+    ::-moz-selection {
+        background:#88c873; /* Firefox */
+    }
+
+
+
 h1, h2, h3, h4{
     letter-spacing: 1px;
     color: #333;
