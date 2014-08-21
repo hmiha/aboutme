@@ -3,29 +3,23 @@ html {
 }
 
 body {
-    /*あとで調整しよう*/
     margin: 0 auto;
     padding: 0 auto;
     line-height: 1.3;
-    background-color: #f2e8d7; /* beige */
+    background-color: #f2e8d7; 
     font-size: 0.9em;
     font-family: "Open Sans", "Helvetica", "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "MS Pゴシック", "MS P Gothic", sans-serif; */
     line-height: 1.5; 
 
-    /*全体の幅*/
     width: 900px;
 }
 
-
-/*selected Text*/
 ::selection {
     background:#88c873; /* Safari */
-    }
-    ::-moz-selection {
-        background:#88c873; /* Firefox */
-    }
-
-
+}
+::-moz-selection {
+    background:#88c873; /* Firefox */
+}
 
 h1, h2, h3, h4{
     letter-spacing: 1px;
@@ -40,14 +34,12 @@ h1 {
 }
 h2{ 
     font-size: 1.1em;
-    /*全て大文字に*/
     text-transform: uppercase;
 }
 h3,h4{
     font-size: 1.1em;
 }
 
-/*リスト*/
 ol, ul{
     line-height; 1.8;
 }
@@ -59,7 +51,6 @@ p{
     font-family: 'Open Sans', sans-serif;
     padding-left: 1em;
 }
-/*プロフィール画像 */
 .prof_pic img{
     float: right;
     height: 188px; 
@@ -67,8 +58,6 @@ p{
     margin-right: 30px;
 }
 
-/* リンクとかの色調整 */
-/* 色の参考 http://www.coprosystem.co.jp/tipsblog/2013/08/01.html */
 a {
     color: #FBA848;
     text-decoration: none; /*リンクのアンダーラインを消す */
@@ -76,16 +65,14 @@ a {
 a:visited {
     color: #FBA848;
 }
-/*必要か？ */
 a:focus {
     color: #363947;
     outline: thin dotted;
 }
 a:hover {
-    color: #363947; /*ネイビー的な*/
+    color: #363947;
 }
 
-/* ヘッダを透過フレーム的に*/
 .wrapper{
     margin: 0 auto;
     width: 100%;
@@ -99,32 +86,27 @@ a:hover {
 }
 .toplink a {
     color: #333;
-    text-decoration: none; /*リンクのアンダーラインを消す */
+    text-decoration: none;
 }
 .toplink a:visited {
     color: #333;
 }
 .footer {
     width: 900px;
-    bottom: 0px; /*下固定*/ 
+    bottom: 0px; 
     position: fixed;
     height: auto;
     color: #bbb;
     font-size: 0.8em;
 }
-/* フッターのリンク */
 #nav ul {
-    /*margin-bottom: 0px;*/
     float: right;
-    /*padding-left: 0px;*/
 }
 #nav li {
-    /*float: center;*/
     display: inline-block;
     margin-left: 20px;
 }
 .main{
-    /*ヘッダとフッタ分上下を開ける*/
     padding-top: 100px;
     padding-bottom: 60px;
 }
@@ -137,10 +119,10 @@ table.list td.r2{
     padding-left: 10px;
 }
 .section p{
-    padding-left: 2em; /*2文字分インデント*/
+    padding-left: 2em; 
 }
 .section img{
-    margin-left: 2em; /*画像の左側*/
+    margin-left: 2em; 
 }
 .topic{
     margin-left: 2em; 
