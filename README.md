@@ -1,3 +1,3 @@
 ###AboutMePage
 ---
-This is sourse code of [http://omilab.naist.jp/~mihara](http://omilab.naist.jp/~mihara) 
+Sourse code of [http://omilab.naist.jp/~mihara](http://omilab.naist.jp/~mihara) 
